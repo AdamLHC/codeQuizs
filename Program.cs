@@ -1,3 +1,4 @@
-﻿using DynamicProgramming;
+﻿using Strings;
 
-Console.WriteLine($"ans: {ClimbingStair.CLimbFaster(44)}");
+var input = "abccccdd";
+Console.WriteLine($"Input \"{input}\" has result: {LongestPalindrome.Solve(input)}");
