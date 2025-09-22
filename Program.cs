@@ -1,5 +1,5 @@
-﻿using Array;
+﻿using Strings;
 
-int[] input = [2, 2, 1, 1, 1, 2, 2];
-var output = MajorityElement.solveByMooreMajority(input);
-Console.WriteLine($"Ans: {output}");
+var solution = new AddBinary();
+var output = solution.Add("1010", "1011");
+Console.WriteLine(output);
