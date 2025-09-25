@@ -1,11 +1,14 @@
 public static class MaxiumSubarray
 {
+    //Kadane’s Algorithm
+    // local maximum at index i is the maximum of sum_of_subarray_to_index[i] and the sum of sum_of_subarray_to_index[i] and local maximum at index i-1.
     public static int MaxSubArray(int[] nums)
     {
         int cumulative = 0;
         int max = int.MinValue;
         foreach (var num in nums)
         {
+            //If adding new element causes current output to be smaller than local maxium of current element, The current local maxium is the new element.
             cumulative = Math.Max(cumulative + num, num);
             max = Math.Max(max, cumulative);
         }
